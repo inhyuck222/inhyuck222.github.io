@@ -32,7 +32,7 @@ $(function(){
     	console.log(response);
    
     	if (response.status === 'connected') {
-    		getFacebookDate();
+    		getFacebookData();
     	} else {
         	callback(false);
     	}
@@ -46,7 +46,7 @@ $(function(){
    		});
   	}
 
-  	var getFacebookDate = function(){
+  	var getFacebookData = function(){
   		FB.api('/me', function(response){
   			$('#login').ager(div_session);
   			$('#login').remove();
@@ -60,7 +60,7 @@ $(function(){
   				console.log(response);
   				FB.login(function(response) {
   					if(response.status === 'connected')
-  						getFacebookDate();
+  						getFacebookData();
   				}, {scope: scopes});
   			}
   		})
