@@ -5,10 +5,10 @@ $(function(){
 
 	var btn_login = '<a href = "#" id = "login" class = "btn btn-primary">Iniciar sesion></a>';
 
-	var div_session = "<div id = ''facebook-session'>"+
+	var div_session = "<div id = 'facebook-session'>"+
 					  "<strong></strong>"+
 					  "<img>"+
-					  "<a href = '#' id = 'logout class = 'btn btn-danger'>Cerrar session</a>"+
+					  "<a href = '#' id = 'logout' class = 'btn btn-danger'>Cerrar session</a>"+
 					  "</div>";
 
 	window.fbAsyncInit = function() {
