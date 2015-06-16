@@ -48,7 +48,7 @@ $(function(){
 
   	var getFacebookData = function(){
   		FB.api('/me', function(response){
-  			$('#login').ager(div_session);
+  			$('#login').after(div_session);
   			$('#login').remove();
   			$('#facebook-session strong').text("Bienvenido: "+response.name);
   			$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
@@ -66,10 +66,30 @@ $(function(){
   		})
   	}
 
+  	var facebookLogout = function() {
+  		FB.getLoginStatus(function(response) {
+  			if(response.status === 'connected'){
+  				FB.logout(function(response){
+  					$('#facebook-session').before(btn_login);
+  					$('#facebook-session').remove();
+  				})
+  			}
+  		});
+  	}
+
   	$(document).on('clikc', '#login', function(e){
   		e.preventDefault();
 
   		facebookLogin();
   	})
+
+  	$(document).on('clikc', '#logout', function(e){
+  		e.preventDefault();
+
+  		if(confirm("logout?"))
+  		facebookLogout();
+  		else return false;
+  	})
+
 
 })
