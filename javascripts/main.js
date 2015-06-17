@@ -6,8 +6,8 @@ $(function() {
 	var btn_login = '<a href="#" id="login" class="btn btn-primary btn">Login</a>';
 
 	var div_session = "<div id='facebook-session'>"+
-					  "<strong></strong>"+
-					  //"<img>"+
+					  //"<strong></strong>"+
+					  "<img>"+
 					  "<a href='#' id='logout' class='btn btn-danger btn'>Logout</a>"+
 					  "</div>";
 
@@ -48,7 +48,7 @@ $(function() {
 	  		$('#login').after(div_session);
 	  		$('#login').remove();
 	  		$('#facebook-session strong').text(response.name);
-	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
+	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=small');
 	  	});
   	}
 
