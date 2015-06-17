@@ -47,7 +47,8 @@ $(function() {
   		FB.api('/me', function(response) {
 	  		$('#login').after(div_session);
 	  		$('#login').remove();
-	  		$('#facebook-session strong').text(response.name + " Welecome to the sports world!");
+	  		$('#facebook-session strong').text(response.name);
+	  		$('#facebook-session strong').text("Welecome to the sports world!");
 	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
 	  	});
   	}
