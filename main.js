@@ -3,7 +3,7 @@ $(function() {
 	var app_id = '426904250826355';
 	var scopes = 'email';
 
-	var btn_login = '<a href="#" id="login" class="btn btn-primary">Iniciar sesión</a>';
+	var btn_login = '<a href="#" id="login" class="btn btn-primary">Facebook Login</a>';
 
 	var div_session = "<div id='facebook-session'>"+
 					  "<strong></strong>"+
@@ -47,7 +47,7 @@ $(function() {
   		FB.api('/me', function(response) {
 	  		$('#login').after(div_session);
 	  		$('#login').remove();
-	  		$('#facebook-session strong').text(response.name);
+	  		$('#facebook-session strong').text(response.name+"\n");
 	  		$('#facebook-session strong').text("Welecome to the sports world!");
 	  		$('#facebook-session img').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
 	  	});
