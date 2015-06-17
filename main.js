@@ -16,7 +16,7 @@ $(function() {
 	  	FB.init({
 	    	appId      : app_id,
 	    	<!--status     : true,-->
-	    	<!--cookie     : true, ->>
+	    	<!--cookie     : true, -->
 	    	xfbml      : true, 
 	    	version    : 'v2.1'
 	  	});
