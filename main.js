@@ -79,17 +79,12 @@ $(function() {
 
   	$(document).on('click', '#login', function(e) {
   		e.preventDefault();
-
   		facebookLogin();
   	})
 
   	$(document).on('click', '#logout', function(e) {
   		e.preventDefault();
-
-  		if (confirm("¿Está seguro?"))
-  			facebookLogout();
-  		else 
-  			return false;
+  		facebookLogout();
   	})
 
 })
