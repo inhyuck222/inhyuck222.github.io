@@ -3,12 +3,12 @@ $(function() {
 	var app_id = '426904250826355';
 	var scopes = 'email';
 
-	var btn_login = '<a href="#" id="login" class="btn btn-primary">Facebook Login</a>';
+	var btn_login = '<a href="#" id="login" class="btn btn-primary btn">Login</a>';
 
 	var div_session = "<div id='facebook-session'>"+
 					  "<strong></strong>"+
 					  "<img>"+
-					  "<a href='#' id='logout' class='btn btn-danger'>Logout</a>"+
+					  "<a href='#' id='logout' class='btn btn-danger btn'>Logout</a>"+
 					  "</div>";
 
 	window.fbAsyncInit = function() {
