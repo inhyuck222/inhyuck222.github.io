@@ -11,7 +11,7 @@ strong, img {
 }
 img {
 	margin: 0 auto;
-	border-radius: 10px;
+	border-radius: 3px;
 }
 #logout {
 	margin-top: 10px;
