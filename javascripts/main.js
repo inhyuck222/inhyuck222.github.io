@@ -7,7 +7,7 @@ $(function() {
 
 	var div_session = "<div id='facebook-session'>"+
 					  "<strong></strong>"+
-					  "<img>"+
+					  "<img class="img-responsive" alt="Responsive image">"+
 					  "<a href='#' id='logout' class='btn btn-danger btn'>Logout</a>"+
 					  "</div>";
 
