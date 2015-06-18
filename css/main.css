@@ -20,20 +20,48 @@
 .navbar .navbar-default .navar-static-top{
 	color : white;
 }
-#applyBtn{
-	text-align: right;
+#applySection{
+	background-image: url(applySection.jpg);
+	background-size: 100% 100%;
+	border-radius: 25px;
+	min-height: 300px;
+	max-height: 350px;
+}
+#applySection p{
+	padding: 5% 5% 5% 5%;
+	margin-top: 60%;
+	font-size:18px;
+	background-color: #000000;
+    opacity: 0.5;
+    color:white;
 }
 #gameNewSection{
 	background-image: url("http://imgnews.naver.net/image//431/2015/06/18/mug_obj_143459363470849489.jpg?type=w540");
+	background-size: 100% 100%;
 	border-radius: 25px;
-	max-height:550px;
+	min-height: 300px;
+	max-height: 350px;
 }
 #gameNewSection p{
-	margin-top:170px;
-	font-size:20px;
-	color:white;
+	padding: 5% 5% 5% 5%;
+	margin-top: 60%;
+	font-size:18px;
+	background-color: #000000;
+    opacity: 0.5;
+    color:white;
 }
-#gameNewSection h3{
-	font-size:40px;
-	color:white;
+#machupSection{
+	background-image: url("three.jpg");
+	background-size: 100% 100%;
+	border-radius: 25px;
+	min-height: 300px;
+	max-height: 350px;
+}
+#machupSection p{
+	padding: 5% 5% 5% 5%;
+	margin-top: 60%;
+	font-size:18px;
+	background-color: #000000;
+    opacity: 0.5;
+    color:white;
 }
