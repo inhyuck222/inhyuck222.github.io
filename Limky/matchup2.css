@@ -8,9 +8,9 @@
 
 .container .jumbotron {
 	background-image: url("http://pds.egloos.com/pds/1/200502/17/00/b0049600_10105237.jpg");
-	background-size: 1200px 600px;
+	background-size: 1200px 400px;
 	color: white;
-	min-height: 200px;
+	min-height: 400px;
 }
 
 .container .jumbotron h1{
