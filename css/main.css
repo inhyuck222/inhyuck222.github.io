@@ -1,3 +1,7 @@
+.collapse a{
+	color: white;
+}
+
 #logout {
 	margin-top: 10px;
 }
