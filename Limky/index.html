@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap 3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="javascripts/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class = "navbar navbar-default navar-static-top">
+		<div class = "container">
+			<h2 class = "navbar-brand">Tech Site</h2>
+			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+				<span class = "icon-bar"></span>
+				<span class = "icon-bar"></span>
+				<span class = "icon-bar"></span>
+			</button>
+			<div class = "collapse navbar-collapse navHeaderCollapse">
+				<ul class = "nav navbar-nav navbar-right">
+					<li class = "active"><a href = "http://inhyuck222.github.io">Home</a></li>
+					<li><a href = "#">Blog</a></li>
+					<li class = "dropdown">
+						<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Match Up<b class = "caret"></b></a>
+						<ul class = "dropdown-menu">
+							<li><a href = "#">서울&인천</a></li>
+							<li><a href = "Limky/matchup2.html">경기도</a></li>
+							<li><a href = "#">강원도</a></li>
+							<li><a href = "#">충청도</a></li>
+							<li><a href = "#">전라도</a></li>
+							<li><a href = "#">경상도</a></li>
+							<li><a href = "#">제주도</a></li>
+						</ul>
+					</li>
+					<li><a href = "#">About</a></li>
+					<li><a href = "#">Contact</a></li>
+					<li>
+						<a href= "#" id="login" class="btn btn-primary btn">Login</a>
+						<script>
+						// Load the SDK asynchronously
+						  (function(d, s, id) {
+						    var js, fjs = d.getElementsByTagName(s)[0];
+						    if (d.getElementById(id)) return;
+						    js = d.createElement(s); js.id = id;
+						    js.src = "//connect.facebook.net/en_US/sdk.js";
+						    fjs.parentNode.insertBefore(js, fjs);
+						  }(document, 'script', 'facebook-jssdk'));
+						 </script>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Grow Up Your Team!</h1>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div id="applySection"class="col-md-4">
+				<a href="#"><p>팀원 구합니다.</p></a>
+			</div>
+			
+			<div id="gameNewSection" class="col-md-4 col-md-offset-0.5">
+				<a href ="#"><p>네이마르 의존증, 원톱+캡틴 절실한 브라질</p></a>
+			</div>
+			<div id="machupSection" class="col-md-4">
+				<a href ="#"><p>인천 VS 서울</p></a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class = "navbar navbar-default navbar-fixed-bottom">
+		<div class = "container">
+			<p class = "navbar-text pull-left">Site Built By Neil Rowe</p>
+			<a href = "http://youtube.com"class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
