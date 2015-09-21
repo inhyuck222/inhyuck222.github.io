@@ -1,91 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>PlayGround</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<script src="javascripts/login.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<div class = "navbar navbar-default navar-static-top">
-		<div class = "container">
-			<h2 class = "navbar-brand">Play Ground</h2>
-			<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-				<span class = "icon-bar"></span>
-				<span class = "icon-bar"></span>
-				<span class = "icon-bar"></span>
-			</button>
-			<div class = "collapse navbar-collapse navHeaderCollapse">
-				<ul class = "nav navbar-nav navbar-right">
-					<li class = "active"><a href = "http://inhyuck222.github.io">Home</a></li>
-					<li><a href = "#">Blog</a></li>
-					<li class = "dropdown">
-						<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Match Up<b class = "caret"></b></a>
-						<ul class = "dropdown-menu">
-							<li><a href = "#">서울&인천</a></li>
-							<li><a href = "matchup2.html">경기도</a></li>
-							<li><a href = "#">강원도</a></li>
-							<li><a href = "#">충청도</a></li>
-							<li><a href = "#">전라도</a></li>
-							<li><a href = "#">경상도</a></li>
-							<li><a href = "#">제주도</a></li>
-						</ul>
-					</li>
-					<li><a href = "#">About</a></li>
-					<li><a href = "#">Contact</a></li>
-					<li>
-						<a href= "#" id="login" class="btn btn-primary btn">Login</a>
-						<script>
-						// Load the SDK asynchronously
-						  (function(d, s, id) {
-						    var js, fjs = d.getElementsByTagName(s)[0];
-						    if (d.getElementById(id)) return;
-						    js = d.createElement(s); js.id = id;
-						    js.src = "//connect.facebook.net/en_US/sdk.js";
-						    fjs.parentNode.insertBefore(js, fjs);
-						  }(document, 'script', 'facebook-jssdk'));
-						 </script>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="jumbotron">
-			<h1>Grow Up Your Team!</h1>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="row">
-			<div id="applySection"class="col-md-4">
-				<a href="#"><p>팀원 구합니다.</p></a>
-			</div>
-			
-			<div id="gameNewSection" class="col-md-4 col-md-offset-0.5">
-				<a href ="http://sports.news.naver.com/sports/index.nhn?category=worldfootball&ctg=news&mod=read&office_id=119&article_id=0002081559&date=20150619&page=1"><p>네이마르 의존증, 원톱+캡틴 절실한 브라질</p></a>
-			</div>
-			<div id="machupSection" class="col-md-4">
-				<a href ="http://sports.news.naver.com/sports/index.nhn?category=soccer&ctg=news&mod=read&office_id=468&article_id=0000012818&date=20150619&page=5"><p>인천 VS 서울</p></a>
-			</div>
-		</div>
-	</div>
+<!--
+'88       88'          88 8888       88 88            88 88888888888 8888       88 88888888888   ,ad8888ba,   88888888ba,
+  88     88            88 88 88      88  88          88  88          88 88      88 """"888""""  d8"'    `"8b  88      `"8b
+   88   88             88 88  88     88   88        88   88          88  88     88     888     d8'        `8b 88       .8b
+    88.88   x-inventor 88 88   88    88    88      88    8dev@invent 88   88    88     888     88          88 888888888P'
+     888    """""""""" 88 88    88   88     88    88     88""""""""" 88    88   88     888     88          88 88     "8ba,
+    88'88              88 88     88  88      88  88      88          88     88  88     888     Y8,        ,8P 88       'Y8
+   88   88             88 88      88 88       8888       88          88      88 88     888      Y8a.    .a8P  88        8a
+  88     88            88 88       8888`       88        88888888888 88       8888     888       '"Y8888Y"'   88        Y8
+.88       88.          ===================================================================================================
+     Copyright © 2015 X-Inventor. All rights reserved.-->
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400, 300, 500, 100">
+      <link rel="stylesheet" type="text/css" href="./assets/style.css">
+      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script type="text/javascript" src="./assets/main.js"></script>
+        <script type="text/javascript" src="./assets/sub.js"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 
 
-	<div class = "navbar navbar-default navbar-fixed-bottom">
-		<div class = "container">
-			<p class = "navbar-text pull-left">Site Built By Lims</p>
-			<a href = "http://youtube.com"class = "navbar-btn btn-danger btn pull-right">Subscribe on YouTube</a>
-		</div>
-	</div>
-	
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</body>
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+      <title>X-Inventor</title>
+   </head>
+   <body>
+                                             
+  
+           <div class="container-fluid">
+            <div class="row">
+               <div class="col-sm-2 col-md-2 sidebar">
+ 
+    <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><h2 class="title"><label>INPUT</label></h2><span class="caret"></span></button>
+    
+<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+  
+                    <li class="input item" id="I0"><img data-toggle="tooltip" class="tip-right" data-original-title="1Brightness"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"></li>
+                     <li class="input item" id="I1"><img data-toggle="tooltip" class="tip-right" data-original-title="Length"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> </li>
+                     <li class="input item" id="I2"><img data-toggle="tooltip" class="tip-right" data-original-title="Compass"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> </li>
+                     <li class="input item" id="I3"><img data-toggle="tooltip" class="tip-right" data-original-title="Heartbeat"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> </li>
+                     <li class="input item" id="I4"><img data-toggle="tooltip" class="tip-right" data-original-title="Sound"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> </li>
+                     <li class="input item" id="I5"><img data-toggle="tooltip" class="tip-right" data-original-title="Time"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> </li>
+                     <li class="input item" id="I6"><img data-toggle="tooltip" class="tip-right" data-original-title="Rotation"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> </li>
+                     <li class="input item" id="I7"><img data-toggle="tooltip" class="tip-right" data-original-title="Color"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> </li>
+                     <li class="input item" id="I8"><img data-toggle="tooltip" class="tip-right" data-original-title="Acceleration"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> </li>
+                     <li class="input item" id="I9"><img data-toggle="tooltip" class="tip-right" data-original-title="Slope"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> </li>
+                     <li class="input item" id="I10"><img data-toggle="tooltip" class="tip-right" data-original-title="Humidity"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> </li>
+                     <li class="input item" id="I11"><img data-toggle="tooltip" class="tip-right" data-original-title="Temperature" id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> </li>
+    
+      <li role="presentation" class="divider"></li>
+      
+       <a href="./simulate.html">
+                  <div class="process">
+                     
+                     <button type="button" id="simulate" data-loading-text="Loading..." class="btn">
+                        <h3>Simulate</h3>
+                     </button>
+                    
+                  </div>
+                        </a>
+    
+</ul>
+ 
+ </div>
+
+                 
+            
+               </div>
+     
+             <div class="col-sm-8 col-md-8 board" id="onBoard">
+                  
+                  <div class="garbage"><img src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-17-bin.png"></div>
+                  <h3 id="draw"></h3>
+                  <div class="detail">
+                     <h2 class="title"><label>DETAIL</label></h2>
+                     <div class="detailContent">
+                        <table>
+                                                
+                        </table>
+                     </div>
+                  </div>
+            </div>
+            <div class="col-sm-2 col-md-2 sidebar">
+               <div class="output-sidebar"><h2 class="title"><label>OUTPUT</label></h2></div>
+               <ul class="nav nav-sidebar" id="slider">
+                   <!-- output List id 는 알파벳 대문자 O 와 숫자를 합친것 -->
+                  <li class="output item" id="O0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li>
+                  <li class="output item" id="O1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li>
+                  <li class="output item" id="O2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li>
+                  <li class="output item" id="O3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li>
+                  <li class="output item" id="O4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li>
+                  <li class="output item" id="O5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li>
+                  <li class="output item" id="O6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li>
+                  <li class="output item" id="O7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li>
+                  <li class="output item" id="O8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li>
+               </ul>
+               <a href="./clock.html">
+               <div class="process">
+                  <button type="button" id="create" data-loading-text="Loading..." class="btn">
+                     <h3>Create</h3>
+                  </button>
+               </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
