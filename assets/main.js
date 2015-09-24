@@ -145,7 +145,7 @@ $(document).ready(function(){
  
     // set effect from select menu value
     $( ".input-button" ).click(function() {
-      var selectedEffect = "drop";
+      var selectedEffect = "blind";
  
       // most effect types need no options passed by default
       var options = {};
