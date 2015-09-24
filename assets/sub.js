@@ -18,7 +18,7 @@ function sizeSet(){
     var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
     $('.board').css({'height': height});
     $('#draw').css({'width' : drawWidth, 'height' : height});
-    $('.garbage').css({'width' : drawWidth, 'left' : colWidth+'px'});
+    //$('.garbage').css({'width' : drawWidth, 'left' : colWidth+'px'});
     $('.process').css({'top' : height-100+'px'});
     $('#help').css({'width' : (width/8)+20});
     $('#next').css({'width' : (width/8)+20});
