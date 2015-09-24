@@ -14,70 +14,77 @@
    <head>
       <link rel="stylesheet" type="text/css" href="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400, 300, 500, 100">
-      <link rel="stylesheet" type="text/css" href="./assets/style.css">
-      <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <script type="text/javascript" src="./assets/main.js"></script>
-        <script type="text/javascript" src="./assets/sub.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+      <script src="./main.js"></script>
+      <script src="./sub.js"></script>
+
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
       <title>X-Inventor</title>
    </head>
    <body>
-                                             
-  
            <div class="container-fluid">
             <div class="row">
-               <div class="col-sm-2 col-md-2 sidebar">
- 
-    <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><h2 class="title"><label>INPUT</label></h2><span class="caret"></span></button>
-    
-<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-  
-                    <li class="input item" id="I0"><img data-toggle="tooltip" class="tip-right" data-original-title="1Brightness"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"></li>
-                     <li class="input item" id="I1"><img data-toggle="tooltip" class="tip-right" data-original-title="Length"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> </li>
-                     <li class="input item" id="I2"><img data-toggle="tooltip" class="tip-right" data-original-title="Compass"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> </li>
-                     <li class="input item" id="I3"><img data-toggle="tooltip" class="tip-right" data-original-title="Heartbeat"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> </li>
-                     <li class="input item" id="I4"><img data-toggle="tooltip" class="tip-right" data-original-title="Sound"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> </li>
-                     <li class="input item" id="I5"><img data-toggle="tooltip" class="tip-right" data-original-title="Time"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> </li>
-                     <li class="input item" id="I6"><img data-toggle="tooltip" class="tip-right" data-original-title="Rotation"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> </li>
-                     <li class="input item" id="I7"><img data-toggle="tooltip" class="tip-right" data-original-title="Color"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> </li>
-                     <li class="input item" id="I8"><img data-toggle="tooltip" class="tip-right" data-original-title="Acceleration"    id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> </li>
-                     <li class="input item" id="I9"><img data-toggle="tooltip" class="tip-right" data-original-title="Slope"  id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> </li>
-                     <li class="input item" id="I10"><img data-toggle="tooltip" class="tip-right" data-original-title="Humidity"   id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> </li>
-                     <li class="input item" id="I11"><img data-toggle="tooltip" class="tip-right" data-original-title="Temperature" id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> </li>
-    
-      <li role="presentation" class="divider"></li>
-      
-       <a href="./simulate.html">
-                  <div class="process">
-                     
-                     <button type="button" id="simulate" data-loading-text="Loading..." class="btn">
-                        <h3>Simulate</h3>
-                     </button>
-                    
-                  </div>
-                        </a>
-    
-</ul>
- 
- </div>
+                <div class="col-sm-2 col-md-2 input-side">
+                <div class="input-side">
+                  <!--<div class="input-sidebar"><h2 class="title"><label>INPUT</label></h2></div>-->
+                  <div class="input-close"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png"></div>
+                  <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
+                  <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
+                  Length</h4></li>
+                  <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
+                  <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
+                  <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
+                  <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
+                  Time</h4></li>
+                  <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
+                  <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
+                  <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
+                  <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
+                  <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
+                  <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
+                </div>
 
+                </div>
+                <button id="button" class="input-button">Run Effect</button> 
+
+                  <!--<ul class="nav nav-sidebar" id="slider">
+                     <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
+                     <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> Length</h4></li>
+                     <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
+                     <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
+                     <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
+                     <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> Time</h4></li>
+                     <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
+                     <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
+                     <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
+                     <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
+                     <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
+                     <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
+                  </ul>
+                   <a href="./simulate.html">
                  
-            
-               </div>
-     
-             <div class="col-sm-8 col-md-8 board" id="onBoard">
+                    <div class="process">
+                     
+                     <button type="button" id="help" data-loading-text="Loading..." class="btn">
+                        <h3>HELP</h3>
+                     </button>
+                        
+                  </div>
+
+                        </a>
+               </div>-->
+               <!--<div class="col-sm-8 col-md-8 board" id="onBoard">-->
+               <div class="col-sm-8 col-md-8 board" id="onBoard">
                   
                   <div class="garbage"><img src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-17-bin.png"></div>
                   <h3 id="draw"></h3>
+                   <!--
                   <div class="detail">
                      <h2 class="title"><label>DETAIL</label></h2>
                      <div class="detailContent">
@@ -86,6 +93,7 @@
                         </table>
                      </div>
                   </div>
+                    -->
             </div>
             <div class="col-sm-2 col-md-2 sidebar">
                <div class="output-sidebar"><h2 class="title"><label>OUTPUT</label></h2></div>
@@ -103,8 +111,8 @@
                </ul>
                <a href="./clock.html">
                <div class="process">
-                  <button type="button" id="create" data-loading-text="Loading..." class="btn">
-                     <h3>Create</h3>
+                  <button type="button" id="next" data-loading-text="Loading..." class="btn">
+                     <h3>NEXT</h3>
                   </button>
                </div>
                </a>
