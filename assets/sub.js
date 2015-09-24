@@ -8,11 +8,12 @@ var addEvent = function(object, type, callback) {
         object["on"+type] = callback;
     }
 };
+
 function sizeSet(){
     var height = $(window).height();
     var width = $(window).width();
-    var colWidth = $('.col-md-2').css('width').replace(/[^-\d\.]/g, '');
-    var widthG = $('.col-md-8').css('width').replace(/[^-\d\.]/g, '');
+    //var colWidth = $('.col-md-2').css('width').replace(/[^-\d\.]/g, '');
+    var widthG = $('.col-md-12').css('width').replace(/[^-\d\.]/g, '');
     var heightG = $('.board').css('height').replace(/[^-\d\.]/g, '');
     var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
     $('.board').css({'height': height});
