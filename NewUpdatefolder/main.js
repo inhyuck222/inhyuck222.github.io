@@ -1,12 +1,5 @@
 $(document).ready(function(){
     
-    //----------툴팁 적용 부분----------//
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-    //-------------툴팁 끝-----------//
-    
-    
     
     $('body').css('overflow','hidden');
     //Window Size setting
@@ -102,7 +95,7 @@ $(document).ready(function(){
                 }
             }
         });
-    });
+});
 
     $('.board').droppable({        // 보드 드롭 이벤트
         accept: '.item',
@@ -137,34 +130,25 @@ $(document).ready(function(){
             }
         }
     });
+
+$('.process').on('click', function(){
+    var $btn = $(this).button('loading');
+    $btn.button('reset');
+});
+
+
+$( ".dropdown-toggle-input" ).click(function() {
+    $(".input-menu").slideToggle();
+});
+$( ".dropdown-toggle-output" ).click(function() {
+    $(".output-menu").slideToggle();
+});
+
+    //----------툴팁 적용 부분----------//
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+    //-------------툴팁 끝-----------//
     
-    $('.process').on('click', function(){
-        var $btn = $(this).button('loading');
-        $btn.button('reset');
-    });
-
-
-
-    // set effect from select menu value
-    /*$( ".input-button" ).click(function() {
-      var selectedEffect = "blind";
- 
-      // most effect types need no options passed by default
-      var options = {};
-      // some effects have required parameters
-      if ( selectedEffect === "scale" ) {
-        options = { percent: 10 };
-      } else if ( selectedEffect === "size" ) {
-        options = { to: { width: 200, height: 60 } };
-      }
- 
-      // run the effect
-      $( ".input-side" ).toggle( selectedEffect, options, 500 );
-    });*/
-    $( ".dropdown-toggle-input" ).click(function() {
-        $(".input-menu").slideToggle();
-    });
-    $( ".dropdown-toggle-output" ).click(function() {
-        $(".output-menu").slideToggle();
-    });
+    
 });
