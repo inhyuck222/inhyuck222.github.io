@@ -39,7 +39,7 @@ $(document).ready(function(){
             snap: $(this),
             snapMode: 'outer',
             start:function(){
-                $('.garbage').animate({top: "52px"}, 175);
+                $('.garbage').animate({height:'toggle'}, 175);
                 $('.board').animate({top: "0px"}, 175);
             },
             drag:function(){
@@ -50,7 +50,7 @@ $(document).ready(function(){
                 }
             },
             stop:function(){
-                $('.garbage').animate({top: "50px", height: "50px"}, 175);
+                //$('.garbage').animate({height:'toggle'}, 175);
                 $('.board').animate({top: "0px"}, 175);
             },
             stack:".board"
