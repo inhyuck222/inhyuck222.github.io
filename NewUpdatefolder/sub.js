@@ -12,13 +12,19 @@ var addEvent = function(object, type, callback) {
 function sizeSet(){
     var height = $(window).height();
     var width = $(window).width();
-    //var colWidth = $('.col-md-2').css('width').replace(/[^-\d\.]/g, '');
+
+    var colWidth = $('.navbar-left').css('width').replace(/[^-\d\.]/g, '');
+    var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
+    //console.log(width-colWdith);
+
     var widthG = $('.col-md-12').css('width').replace(/[^-\d\.]/g, '');
     var heightG = $('.board').css('height').replace(/[^-\d\.]/g, '');
     var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
     $('.board').css({'height': height});
     $('#draw').css({'width' : drawWidth, 'height' : height});
-    //$('.garbage').css({'width' : drawWidth, 'left' : colWidth+'px'});
+
+    $('.garbage').css({'width' : drawWidth, 'left' : colWidth+'px', 'right' : width - colWidth + 'px', 'top': navBottom+'px'});
+
     $('.process').css({'top' : height-100+'px'});
     $('#help').css({'width' : (width/8)+20});
     $('#next').css({'width' : (width/8)+20});
@@ -47,7 +53,7 @@ function drawOutput(num, text){
     return "<div id = 'output' class='outputContent "+num+"'><label id = '"+num+"'>"+text+"</label></div>";
 }
 //////////////////////////////////////////////////////////////
-    
+
 ///////////////////////////////////////////////////////////////
 //mouse 좌표 인식 함수 // ///////////////////////////////////////
 var mouseX;     //전체 document에서의 위치
@@ -208,46 +214,46 @@ function createObjByID(ID){ //
 /////////////////////////부모 클래스///////////////////////////////
 //id가 -1이면 생성이 안되었다는 뜻.
 function InputItem(){
-        this.id=-1;
-        this.text="default";
-        this.getID = function(){
-            return this.id;
-        };
-        this.setID = function(id){
-            this.id = id;
-        };
-        this.outputList = new Array();
-        this.draw = function(){
-             $("#draw").append("<div id = 'input"+this.id+"'  class='item intput inputItem'><label>"+this.text+"</label></div>");
-        };
+    this.id=-1;
+    this.text="default";
+    this.getID = function(){
+        return this.id;
     };
-    
-    function OutputItem(){
-        this.inputItem = new InputItem();
-        this.id=-1;
-        this.text="default";
-        this.getID = function(){
-            return this.id;
-        };
-        this.setID = function(id){
-            this.id = id;
-        };
-        this.savedClass; 
-        this.draw = function(){
-                $("#draw").append("<div id = 'output"+this.id+"'  class='item output outputItem'><label>"+this.text+"</label></div>");
-        };
+    this.setID = function(id){
+        this.id = id;
     };
+    this.outputList = new Array();
+    this.draw = function(){
+       $("#draw").append("<div id = 'input"+this.id+"'  class='item intput inputItem'><label>"+this.text+"</label></div>");
+   };
+};
+
+function OutputItem(){
+    this.inputItem = new InputItem();
+    this.id=-1;
+    this.text="default";
+    this.getID = function(){
+        return this.id;
+    };
+    this.setID = function(id){
+        this.id = id;
+    };
+    this.savedClass; 
+    this.draw = function(){
+        $("#draw").append("<div id = 'output"+this.id+"'  class='item output outputItem'><label>"+this.text+"</label></div>");
+    };
+};
 
 inputArr = new Array(); // InputItem 클래스들을 저장할 배열
 outputArr = new Array();    // OutputItem 클래스들을 저장할 배열
-    
+
 ///////////////////////////INPUT///////////////////////////////////
-    function Brightness(){
-        this.detectingBrightness = "Daytime";
-        this.text = "Brightness";
-    };
-    
-    function Length(){
+function Brightness(){
+    this.detectingBrightness = "Daytime";
+    this.text = "Brightness";
+};
+
+function Length(){
         this.detectingLength = 0;   //default setting
         this.selectedLengthUnit = "mm"; //default setting
         this.resolution = 0;    //default setting
@@ -353,7 +359,7 @@ function outputIntoInput(inputNumber,outputNumber){
     prompt(str);                    //실험코드
     */
 }
-    
+
 
 function onBoardDelete(outputNumber){
     outputObject = new OutputItem();
