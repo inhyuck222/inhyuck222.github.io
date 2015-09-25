@@ -15,7 +15,9 @@ function sizeSet(){
 
     var colWidth = $('.navbar-left').css('width').replace(/[^-\d\.]/g, '');
     var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
-    //console.log(width-colWdith);
+
+    
+    
 
     var widthG = $('.col-md-12').css('width').replace(/[^-\d\.]/g, '');
     var heightG = $('.board').css('height').replace(/[^-\d\.]/g, '');
@@ -23,7 +25,7 @@ function sizeSet(){
     $('.board').css({'height': height});
     $('#draw').css({'width' : drawWidth, 'height' : height});
 
-    $('.garbage').css({'width' : drawWidth, 'left' : colWidth+'px', 'right' : width - colWidth + 'px', 'top': navBottom+'px'});
+    $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': navBottom+'px'});
 
     $('.process').css({'top' : height-100+'px'});
     $('#help').css({'width' : (width/8)+20});
