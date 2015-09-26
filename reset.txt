@@ -30,111 +30,54 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-
-      <!-- <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>     
-          <span class="icon-bar"></span>
-        </button> 
-      </div> -->
-      <ul class="nav navbar-nav navbar-left">
-        <li class="dropdown">
-          <a class="dropdown-toggle-input" data-toggle="dropdown" href="#">INPUT<span class="caret"></span></a>
-          <ul class="dropdown-menu input-menu">
-            <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
-            <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
-              Length</h4></li>
-              <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
-              <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
-              <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
-              <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
-                Time</h4></li>
-                <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
-                <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
-                <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
-                <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
-                <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
-                <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
-              </ul>
-              
-            </li> 
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-           <li class="dropdown">
-            <a class="dropdown-toggle-output" data-toggle="dropdown" href="#">OUTPUT<span class="caret"></span></a>
-            <ul class="dropdown-menu output-menu">
-              <li class="output item" id="O0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li>
-              <li class="output item" id="O1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li>
-              <li class="output item" id="O2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li>
-              <li class="output item" id="O3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li>
-              <li class="output item" id="O4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li>
-              <li class="output item" id="O5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li>
-              <li class="output item" id="O6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li>
-              <li class="output item" id="O7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li>
-              <li class="output item" id="O8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li>
+    <ul class="nav navbar-nav navbar-left">
+      <li class="dropdown">
+        <a class="dropdown-toggle-input" data-toggle="dropdown" href="#">INPUT<span class="caret"></span></a>
+        <ul class="dropdown-menu input-menu">
+          <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
+          <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
+            Length</h4></li>
+            <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
+            <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
+            <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
+            <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
+              Time</h4></li>
+              <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
+              <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
+              <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
+              <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
+              <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
+              <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
             </ul>
-          </li>
+          </li> 
         </ul>
 
-      </nav>
+        <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+          <a class="dropdown-toggle-output" data-toggle="dropdown" href="#">OUTPUT<span class="caret"></span></a>
+          <ul class="dropdown-menu output-menu">
+            <li class="output item" id="O0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li>
+            <li class="output item" id="O1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li>
+            <li class="output item" id="O2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li>
+            <li class="output item" id="O3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li>
+            <li class="output item" id="O4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li>
+            <li class="output item" id="O5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li>
+            <li class="output item" id="O6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li>
+            <li class="output item" id="O7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li>
+            <li class="output item" id="O8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="container-fluid">
-      <!--<div class="row">
-                <div class="col-sm-2 col-md-2 input-side">
-                <div class="input-side">
-                  <div class="input-sidebar"><h2 class="title"><label>INPUT</label></h2></div>
-                  <div class="input-close"><img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png"></div>
-                  <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
-                  <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
-                  Length</h4></li>
-                  <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
-                  <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
-                  <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
-                  <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
-                  Time</h4></li>
-                  <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
-                  <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
-                  <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
-                  <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
-                  <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
-                  <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
-                </div>
+    <div class="col-sm-12 col-md-12 board" id="onBoard">
+     <div class="garbage"><img src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-17-bin.png"></div>
+     <h3 id="draw"></h3>
+    </div>
+ </body>
+ </html>
 
-              </div>
-              <button id="button" class="input-button">Run Effect</button>-->
-
-                  <!--<ul class="nav nav-sidebar" id="slider">
-                     <li class="input item" id="I0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
-                     <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> Length</h4></li>
-                     <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>
-                     <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li>
-                     <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li>
-                     <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> Time</h4></li>
-                     <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li>
-                     <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li>
-                     <li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li>
-                     <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li>
-                     <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li>
-                     <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li>
-                  </ul>
-                   <a href="./simulate.html">
-                 
-                    <div class="process">
-                     
-                     <button type="button" id="help" data-loading-text="Loading..." class="btn">
-                        <h3>HELP</h3>
-                     </button>
-                        
-                  </div>
-
-                        </a>
-                      </div>-->
-                      <!--<div class="col-sm-8 col-md-8 board" id="onBoard">-->
-                      <div class="col-sm-12 col-md-12 board" id="onBoard">
-                        <div class="garbage"><img src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-17-bin.png"></div>
-                        <h3 id="draw"></h3>
-                   <!--
+ <!--
                   <div class="detail">
                      <h2 class="title"><label>DETAIL</label></h2>
                      <div class="detailContent">
@@ -144,30 +87,3 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
                      </div>
                   </div>
                 -->
-              </div>
-            <!--<div class="col-sm-2 col-md-2 sidebar">
-               <div class="output-sidebar"><h2 class="title"><label>OUTPUT</label></h2></div>
-               <ul class="nav nav-sidebar" id="slider">-->
-                <!-- output List id 는 알파벳 대문자 O 와 숫자를 합친것 -->
-                  <!--<li class="output item" id="O0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li>
-                  <li class="output item" id="O1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li>
-                  <li class="output item" id="O2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li>
-                  <li class="output item" id="O3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li>
-                  <li class="output item" id="O4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li>
-                  <li class="output item" id="O5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li>
-                  <li class="output item" id="O6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li>
-                  <li class="output item" id="O7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li>
-                  <li class="output item" id="O8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li>
-               </ul>
-               <a href="./clock.html">
-               <div class="process">
-                  <button type="button" id="next" data-loading-text="Loading..." class="btn">
-                     <h3>NEXT</h3>
-                  </button>
-               </div>
-               </a>
-            </div>
-          </div>-->
-        </div>
-      </body>
-      </html>
