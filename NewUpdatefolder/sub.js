@@ -14,19 +14,15 @@ function sizeSet(){
     var width = $(window).width();
 
     var colWidth = $('.navbar-left').css('width').replace(/[^-\d\.]/g, '');
-    var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
-
     
-    
+    var navBottom = $('.navbar-inverse').css('height').replace(/[^-\d\.]/g, ''); //garbage의 시작점은 nav의 Bottom부터
 
     var widthG = $('.col-md-12').css('width').replace(/[^-\d\.]/g, '');
     var heightG = $('.board').css('height').replace(/[^-\d\.]/g, '');
     var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
-    $('.board').css({'height': height});
+    $('.board').css({'height': height });
     $('#draw').css({'width' : drawWidth, 'height' : height});
-
     $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': navBottom+'px'});
-
     $('.process').css({'top' : height-100+'px'});
     $('#help').css({'width' : (width/8)+20});
     $('#next').css({'width' : (width/8)+20});
@@ -34,13 +30,13 @@ function sizeSet(){
     addEvent(window, "resize", function(event) {
         var height = $(window).height();
         var width = $(window).width();
-        var colWidth = $('.col-md-2').css('width').replace(/[^-\d\.]/g, '');
-        var widthG = $('.col-md-8').css('width').replace(/[^-\d\.]/g, '');
+        var navBottom = $('.navbar-inverse').css('height').replace(/[^-\d\.]/g, ''); //garbage의 시작점은 nav의 Bottom부터
+        var widthG = $('.col-md-12').css('width').replace(/[^-\d\.]/g, '');
         var heightG = $('.board').css('height').replace(/[^-\d\.]/g, '');
         var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
-        $('.board').css({'height': height});
+        $('.board').css({'height': height });
         $('#draw').css({'width' : drawWidth, 'height' : height});
-        $('.garbage').css({'width' : widthG, 'left' : (colWidth)+'px'});
+        $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': navBottom+'px'});
         $('.process').css({'top' : height-100+'px'});
         $('#help').css({'width' : (width/8)+20});
         $('#next').css({'width' : (width/8)+20});
