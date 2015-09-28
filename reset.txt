@@ -29,7 +29,7 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
   <title>X-Inventor</title>
 </head>
 <body>
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <ul class="nav navbar-nav navbar-left">
       <li class="dropdown">
         <a class="dropdown-toggle-input" data-toggle="dropdown" href="#">INPUT<span class="caret"></span></a>
