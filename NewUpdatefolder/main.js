@@ -40,19 +40,20 @@ $(document).ready(function(){
 
             start:function(){
                 var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, ''); //쓰레기통의 시작점을 nav의 bottom으로 받았어
-                $('.garbage').animate({top: navBottom}, 175);                                   //그리고 시작 할 때 navBottom에서 시작하게 했어
+                $('.garbage').animate({top: navBottom}, 175);                                       //그리고 시작 할 때 navBottom에서 시작하게 했어
                 //$('.board').animate({top: navBottom}, 175);
             },
             drag:function(){
-
-                if(mouseY<100){
-                    $('.garbage').css({'height':50+'px'});//50+(100-mouseY)+'px'});
+                var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
+                if(50<mouseY && mouseY<100){
+                    $('.garbage').css({'height':50+(100-mouseY)+'px'});//50+(100-mouseY)+'px'});
                 }else{
                     $('.garbage').css({'height':50+'px'});
                 }
             },
             stop:function(){
-                $('.garbage').animate({top: "50px", height: "50px"}, 175);
+                var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
+                $('.garbage').animate({top: "0px", height: "50px"}, 175);
                 //$('.board').animate({top: "0px"}, 175);
             },
             stack:".board"
@@ -138,8 +139,6 @@ $(document).ready(function(){
         var $btn = $(this).button('loading');
         $btn.button('reset');
     });
-
-
 
 
     /*이 함수는 뭐지???
