@@ -22,7 +22,7 @@ function sizeSet(){
     var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
     $('.board').css({'height': height });
     $('#draw').css({'width' : drawWidth, 'height' : height});
-    $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': navBottom+'px'});
+    $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': 0+'px'});
     $('.process').css({'top' : height-100+'px'});
     $('#help').css({'width' : (width/8)+20});
     $('#next').css({'width' : (width/8)+20});
@@ -36,7 +36,7 @@ function sizeSet(){
         var drawWidth = $('.board').css('width').replace(/[^-\d\.]/g, '');
         $('.board').css({'height': height });
         $('#draw').css({'width' : drawWidth, 'height' : height});
-        $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': navBottom+'px'});
+        $('.garbage').css({'width' : width, 'left' : 0+'px', 'top': 0+'px'});
         $('.process').css({'top' : height-100+'px'});
         $('#help').css({'width' : (width/8)+20});
         $('#next').css({'width' : (width/8)+20});
