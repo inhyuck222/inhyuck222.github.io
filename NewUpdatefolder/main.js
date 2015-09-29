@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    
+        //----------툴팁 적용 부분----------//
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+     });
+    //-------------툴팁 끝-----------//
+    
+    
 
     $('body').css('overflow','hidden');
     //Window Size setting
