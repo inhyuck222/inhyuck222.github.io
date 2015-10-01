@@ -38,38 +38,38 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
             <table>
             <tr>
                 <td>
-          <li class="input item" id="I0"><h4 class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Brightness!"  ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
+          <li class="input item" id="I0"><h4 class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Brightness"  ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-232-sun.png"> Brightness</h4></li>
                 </td>
                 <td>
-          <li class="input item" id="I1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
+          <li class="input item" id="I1"><h4 class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Length" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-69-ruler.png"> 
             Length</h4></li>           
                 </td>
                 <td>
          
-            <li class="input item" id="I2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>       
+            <li class="input item" id="I2"><h4 class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Compass"  ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-61-compass.png"> Compass</h4></li>       
                 </td>
             </tr>
                 
                 <tr>
-                    <td>  <li class="input item" id="I3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li></td>
-                    <td> <li class="input item" id="I4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li></td>
-                    <td> <li class="input item" id="I5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
+                    <td>  <li class="input item" id="I3"><h4 class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Heartbeat"  ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-13-heart.png"> Heartbeat</h4></li></td>
+                    <td> <li class="input item" id="I4"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Sound" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-301-microphone.png"> Sound</h4></li></td>
+                    <td> <li class="input item" id="I5"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Time" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-55-clock.png"> 
               Time</h4></li></td>
                 </tr> 
                 
                 <tr>
-                    <td>   <li class="input item" id="I6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li></td>
+                    <td>   <li class="input item" id="I6"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Rotation" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-82-refresh.png"> Rotation</h4></li></td>
                     <td>  
-              <li class="input item" id="I7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li></td>
-                    <td><li class="input item" id="I8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li></td>
+              <li class="input item" id="I7"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Color" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-91-eyedropper.png"> Color</h4></li></td>
+                    <td><li class="input item" id="I8"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Acceleration" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-332-dashboard.png"> Acceleration</h4></li></td>
                 
                 </tr>
                 
                 <tr>
-                    <td> <li class="input item" id="I9"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li></td>
-                    <td> <li class="input item" id="I10"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li></td>
+                    <td> <li class="input item" id="I9"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Slope" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-402-skateboard.png"> Slope</h4></li></td>
+                    <td> <li class="input item" id="I10"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Humidity" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-93-tint.png"> Humidity</h4></li></td>
                     <td>
-              <li class="input item" id="I11"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li></td>
+              <li class="input item" id="I11"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Temperature" ><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-23-fire.png"> Temperature</h4></li></td>
                 
                 </tr>
                 </table>
@@ -83,16 +83,31 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
          <li class="dropdown">
           <a class="dropdown-toggle-output" data-toggle="dropdown" href="#">OUTPUT<span class="caret"></span></a>
           <ul class="dropdown-menu output-menu">
-            <li class="output item" id="O0"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li>
-            <li class="output item" id="O1"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li>
-            <li class="output item" id="O2"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li>
-            <li class="output item" id="O3"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li>
-            <li class="output item" id="O4"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li>
-            <li class="output item" id="O5"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li>
-            <li class="output item" id="O6"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li>
-            <li class="output item" id="O7"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li>
-            <li class="output item" id="O8"><h4><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li>
-          </ul>
+              <table>
+                  <tr>
+                      <td><li class="output item" id="O0"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Speaker"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-185-volume-up.png"> Speaker</h4></li></td>
+                      <td><li class="output item" id="O1"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Movement"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-138-cogwheels.png"> Movement</h4></li></td>
+                      <td><li class="output item" id="O2"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Light"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-65-lightbulb.png"> Light</h4></li></td>
+                  </tr>
+
+                  <tr>
+                      <td><li class="output item" id="O3"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Vibration"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-337-iphone-shake.png"> Vibration</h4></li></td>
+                      <td><li class="output item" id="O4"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Save Data"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-445-floppy-saved.png"> Save Data</h4></li></td>
+                      <td><li class="output item" id="O5"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="H A"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-21-home.png"> H A</h4></li></td>
+                  </tr>
+                  
+                  <tr>
+                      <td> <li class="output item" id="O6"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Waterpump"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-515-bath-shower.png"> Waterpump</h4></li></td>
+                      <td><li class="output item" id="O7"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Display"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-87-display.png"> Display</h4></li></td>
+                      <td><li class="output item" id="O8"><h4  class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Heater"><img id="glyphicons" src="https://s3-ap-northeast-1.amazonaws.com/projectxinventor/resources/img/glyphicons-293-tea-kettle.png"> Heater</h4></li></td> 
+                  </tr>
+            
+
+            
+        
+        
+         </table>         
+         </ul>
         </li>
       </ul>
     </nav>
@@ -114,3 +129,38 @@ Copyright © 2015 X-Inventor. All rights reserved.-->
                      </div>
                   </div>
                 -->
+                
+                
+                
+                
+                
+--------------------------------스타일 부분---------------------
+                
+                
+                
+                
+                
+  .test + .tooltip > .tooltip-inner {
+      background-color: #FCFCFC; 
+      color: #000000; 
+      border: 1px solid #D5D5D5;
+      padding: 15px;
+      font-size: 20px;
+  }
+ 
+  .test + .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid green;
+  }
+  
+  .test + .tooltip.bottom > .tooltip-arrow {
+      border-bottom: 5px solid #B8B8B8;
+  }
+
+  .test + .tooltip.left > .tooltip-arrow {
+      border-left: 5px solid red;
+  }
+
+  .test + .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid black;
+      }
+
