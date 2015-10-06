@@ -1,5 +1,13 @@
 $(document).ready(function(){
     
+        //----------툴팁 적용 부분----------//
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+     });
+    //-------------툴팁 끝-----------//
+    
+    
+
     $('body').css('overflow','hidden');
     //Window Size setting
     sizeSet();
@@ -37,20 +45,24 @@ $(document).ready(function(){
             containment:'document',
             snap: $(this),
             snapMode: 'outer',
+
             start:function(){
-                $('.garbage').animate({top: "52px"}, 175);
-                $('.board').animate({top: "0px"}, 175);
+                var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, ''); //쓰레기통의 시작점을 nav의 bottom으로 받았어
+                $('.garbage').animate({top: navBottom}, 175);                                       //그리고 시작 할 때 navBottom에서 시작하게 했어
+                //$('.board').animate({top: navBottom}, 175);
             },
             drag:function(){
-                if(mouseY<100){
-                    $('.garbage').css({'height':50+(100-mouseY)+'px'});
+                var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
+                if(50<mouseY && mouseY<100){
+                    $('.garbage').css({'height':50+(100-mouseY)+'px'});//50+(100-mouseY)+'px'});
                 }else{
                     $('.garbage').css({'height':50+'px'});
                 }
             },
             stop:function(){
-                $('.garbage').animate({top: "50px", height: "50px"}, 175);
-                $('.board').animate({top: "0px"}, 175);
+                var navBottom = $('.dropdown-toggle-input').css('height').replace(/[^-\d\.]/g, '');
+                $('.garbage').animate({top: "0px", height: "50px"}, 175);
+                //$('.board').animate({top: "0px"}, 175);
             },
             stack:".board"
         });
@@ -59,6 +71,7 @@ $(document).ready(function(){
             accept: '.output',
             greedy: true,
             drop:function(event,ui){
+
                 //input에 드롭되는 경우
                 //1. 보드 드롭 후 해당 인풋에
                 //2. 바로 해당 인풋에
@@ -87,7 +100,7 @@ $(document).ready(function(){
                         object.draw();
                         outputArr[object.getID()] = object;
                         $(document).find('#output'+object.getID()).detach().addClass('outputContain').appendTo(this);
-                        outNumID = object.getID();  //실험코드
+                        outNumID = object.getID();  //실험코드4566
                     }
                     outputIntoInput(inNumID,outNumID);   // inputItem ID가 tempInID 인 객체에게 outputItem ID가 tempOutID인 OutputItem 을 전달
                     
@@ -129,34 +142,36 @@ $(document).ready(function(){
             }
         }
     });
-    
+
     $('.process').on('click', function(){
         var $btn = $(this).button('loading');
         $btn.button('reset');
     });
 
 
-
+    /*이 함수는 뭐지???
     // set effect from select menu value
-    /*$( ".input-button" ).click(function() {
-      var selectedEffect = "blind";
- 
-      // most effect types need no options passed by default
-      var options = {};
-      // some effects have required parameters
-      if ( selectedEffect === "scale" ) {
-        options = { percent: 10 };
-      } else if ( selectedEffect === "size" ) {
-        options = { to: { width: 200, height: 60 } };
-      }
- 
-      // run the effect
-      $( ".input-side" ).toggle( selectedEffect, options, 500 );
+    $( ".input-button" ).click(function() {
+        var selectedEffect = "drop";
+        // most effect types need no options passed by default
+        var options = {};
+        // some effects have required parameters
+        if ( selectedEffect === "scale" ) {
+            options = { percent: 10 };
+        } else if ( selectedEffect === "size" ) {
+            options = { to: { width: 200, height: 60 } };
+        }
+
+        // run the effect
+        $( ".input-menu" ).toggle( selectedEffect, options, 500 );
     });*/
+
     $( ".dropdown-toggle-input" ).click(function() {
         $(".input-menu").slideToggle();
     });
     $( ".dropdown-toggle-output" ).click(function() {
         $(".output-menu").slideToggle();
     });
+
 });
+
