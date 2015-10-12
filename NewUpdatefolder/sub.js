@@ -13,7 +13,7 @@ function sizeSet(){
     var height = $(window).height();
     var width = $(window).width();
 
-    var colWidth = $('.navbar-left').css('width').replace(/[^-\d\.]/g, '');
+    var colWidth = $('.navbar').css('width').replace(/[^-\d\.]/g, '');
     
     var navBottom = $('.navbar-inverse').css('height').replace(/[^-\d\.]/g, ''); //garbage의 시작점은 nav의 Bottom부터
 
